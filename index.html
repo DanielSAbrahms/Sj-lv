@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Nordan</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+    rel = "stylesheet">
+    <script>
+    // Add jQuery
+    window.$ = window.jQuery = require('jquery');
+    require('jquery-ui-dist/jquery-ui');
+    // Add all files recursively in 'scripts/'
+    var glob = require("glob"), path = require("path");
+    glob.sync("./scripts/**/*.js").forEach(function(file){
+        require(path.resolve(file));
+    })
+    </script>
+</head>
+
+<body>
+    <div id="main_container">
+        <div id="leftMenu" class="menu">
+            <div id="leftMenuTitle" class="menuTitle">
+                <h3>Events</h3>
+                <div id="leftMenuContainer"></div>
+            </div>
+        </div>
+        <div id="container" class="sandbox">
+            <script>$("#container").droppable();</script>
+        </div>
+        <div id="rightMenu" class="menu">
+            <div id="rightMenuTitle" class="menuTitle">
+                <h3>Actions</h3>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

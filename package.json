@@ -1,0 +1,21 @@
+{
+  "name": "nordan",
+  "version": "1.0.0",
+  "description": "Not Sure Yet",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "Daniel A",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^2.0.5"
+  },
+  "dependencies": {
+    "glob": "^7.1.2",
+    "jquery": "^3.3.1",
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-dist": "^1.12.1"
+  }
+}
