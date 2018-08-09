@@ -4,3 +4,7 @@ module.exports = function menuObject (type = "noType", name = "noName", active =
   this.name = name;
   this.active = active;
 }
+
+function dropHandler() {
+    if ()
+}

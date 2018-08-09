@@ -11,7 +11,7 @@ $(function() {
     var menuObjects = [leftMenu];
     var str = '<ul>';
     menuObjects.forEach(function(object) {
-      str += '<li id="' + object.name + '" class="ui-widget-content ui-draggable">' + object.name + '</li>';
+      str += '<div class="slot"><li id="' + object.name + '" class="ui-widget-content ui-draggable">' + object.name + '</li></div>';
   });
     str += '</ul>';
     item.innerHTML = str;
@@ -19,6 +19,14 @@ $(function() {
 
   var item = $("#onClick").get(0);
   $(item).draggable({
-      containment : "#container #leftMenuContainer"
+      containment : "#main_container",
+      snap: ".slot",
+      snapMode: "inner",
+      cursor: "move",
+      revert: "invalid"
+  });
+
+  $(".slot").droppable( {
+      activeClass: "ui-state-highlight"
   });
 })

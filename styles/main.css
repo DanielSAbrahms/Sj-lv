@@ -9,6 +9,7 @@ body {
 
 #main_container {
     height: 100%;
+    display: flex;
 }
 
 .menu {
@@ -45,9 +46,8 @@ body {
     list-style: none;
     width: 94px;
     height: 50px;
-    background-color: white;
+    background: red !important;
     border: solid 1.2px #b7b4b4;
-    /* margin: 3px; */
     margin-bottom: 5px;
     margin-top: 5px;
     text-align: center;
@@ -61,4 +61,24 @@ body {
 #container {
     background: #fffff0;
     width: 600px;
+}
+#slot_1_container {
+    margin-left: 250px;
+    margin-top: 200px;
+    background-color: #eeeeee;
+    height: 70px;
+    width: 114px;
+}
+.slot {
+    background-color: white;
+    border: solid 1.2px #b7b4b4;
+    border-radius: 10px;
+    height: 50px;
+    width: 94px;
+    text-align: center;
+    align-content: center;
+}
+
+.ui-state-highlight {
+    background: yellow !important;
 }
