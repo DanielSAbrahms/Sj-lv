@@ -6,5 +6,5 @@ module.exports = function menuObject (type = "noType", name = "noName", active =
 }
 
 function dropHandler() {
-    if ()
+    //TODO: If drop item exists in the sandbox, then spawn action field
 }
