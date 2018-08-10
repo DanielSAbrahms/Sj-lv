@@ -1,7 +1,7 @@
 
 @font-face {
-font-family: "Raleway Regular";
-src: url("styles/fonts/Raleway Font/Raleway-Medium.ttf");
+    font-family: "Raleway Regular";
+    src: url("RalewayFont/Raleway-Medium.ttf");
 }
 
 html {
@@ -22,7 +22,7 @@ body {
 }
 
 .menu {
-    width: 110px;
+    width: 17.4%;
     background: #dfe6e9;
     height: 100%;
     margin: none;
@@ -38,8 +38,9 @@ body {
 }
 
 #leftMenuContainer {
-    height: 450px;
-    padding: 5px;
+    height: 75%;
+    padding: 25px;
+    margin: 25px;
     border: solid 1.2px #b2bec3;
     border-radius: 2px;
     background-color: white;
@@ -53,14 +54,15 @@ body {
 
 #leftMenuContainer li {
     list-style: none;
-    width: 94px;
-    height: 50px;
-    background: red !important;
+    display: table-cell;
+    width: 120px;
+    height: 60px;
+    background: #0984e3 !important;
     border: solid 1.2px #b2bec3;
-    margin-bottom: 5px;
-    margin-top: 5px;
     text-align: center;
+    vertical-align: middle;
     border-radius: 10px;
+    z-index: 3;
 }
 
 #rightMenu {
@@ -69,25 +71,39 @@ body {
 
 #container {
     background: white;
-    width: 600px;
+    width: 65.2%;
+    overflow-x: scroll;
+    overflow-y: scroll;
 }
 #slot_1_container {
-    margin-left: 250px;
-    margin-top: 200px;
+    position: relative;
+    left: 500px;
+    top: 500px;
     background-color: #dfe6e9;
-    height: 70px;
-    width: 114px;
+    height: 100px;
+    width: 200px;
+    display: table-cell;
+    align-content: center;
+    vertical-align: middle;
+    padding: 5px;
 }
 .slot {
     background-color: white;
     border: solid 1.2px #b2bec3;
     border-radius: 10px;
-    height: 50px;
-    width: 94px;
+    height: 60px;
+    width: 120px;
     text-align: center;
     align-content: center;
 }
 
 .ui-state-highlight {
-    background: yellow !important;
+    background: #fdcb6e !important;
+}
+
+#sandbox {
+    height: 1000px;
+    width: 1000px;
+    background-size: 30px 30px;
+    background-image: linear-gradient(to right, rgba(128, 128, 128, 0.13) 1px, transparent 1px), linear-gradient(to bottom, rgba(128, 128, 128, 0.13) 1px, transparent 1px);
 }
