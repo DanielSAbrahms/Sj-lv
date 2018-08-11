@@ -37,32 +37,45 @@ body {
     float: left;
 }
 
-#leftMenuContainer {
+#leftMenuContainer, #rightMenuContainer {
     height: 75%;
     padding: 25px;
     margin: 25px;
     border: solid 1.2px #b2bec3;
     border-radius: 2px;
-    background-color: white;
 }
-#leftMenuContainer ul {
+#leftMenuContainer {
+    background-color: #74b9ff;
+}
+#rightMenuContainer {
+    background-color: #55efc4;
+}
+#leftMenuContainer ul, #rightMenuContainer ul {
     margin: 0;
     padding: 0;
     height: 100%;
     /* background-color: white; */
 }
 
-#leftMenuContainer li {
+#leftMenuContainer li, #rightMenuContainer li {
+    color: white;
     list-style: none;
     display: table-cell;
     width: 120px;
     height: 60px;
-    background: #0984e3 !important;
     border: solid 1.2px #b2bec3;
     text-align: center;
     vertical-align: middle;
     border-radius: 10px;
-    z-index: 3;
+    z-index: 2;
+}
+
+#leftMenuContainer li {
+    background: #0984e3 !important;
+}
+
+#rightMenuContainer li {
+    background: #00b894 !important;
 }
 
 #rightMenu {
@@ -89,7 +102,7 @@ body {
 }
 .slot {
     background-color: white;
-    border: solid 1.2px #b2bec3;
+    border: solid 0px #b2bec3;
     border-radius: 10px;
     height: 60px;
     width: 120px;
@@ -97,8 +110,16 @@ body {
     align-content: center;
 }
 
-.ui-state-highlight {
-    background: #fdcb6e !important;
+.slot.empty {
+    border: solid 1.2px #b2bec3;
+}
+
+.event-highlight {
+    background: #ffeaa7 !important;
+}
+
+.action-highlight {
+    background: #6c5ce7 !important;
 }
 
 #sandbox {
@@ -106,4 +127,10 @@ body {
     width: 1000px;
     background-size: 30px 30px;
     background-image: linear-gradient(to right, rgba(128, 128, 128, 0.13) 1px, transparent 1px), linear-gradient(to bottom, rgba(128, 128, 128, 0.13) 1px, transparent 1px);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
