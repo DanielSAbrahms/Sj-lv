@@ -9,8 +9,7 @@ module.exports = function menuObject (type = "noType", name = "noName", active =
 
 }
 
-function dropHandler() {
-    console.log("!!!!!!!!!!!!!!!!I have a new Home");
+function dropHandler(event, ui) {
 }
 
 function doubleClickHandler() {

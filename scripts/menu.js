@@ -17,7 +17,9 @@ $(function() {
       snapMode: "inner",
       cursor: "move",
       revert: "invalid",
-      stop: leftMenu.dropHandler
+      stop: function(event, ui) {
+          leftMenu.dropHandler(event, ui);
+      }
   });
 
   $("#leftMenuContainer li").on('dblclick', leftMenu.doubleClickHandler);
