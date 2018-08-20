@@ -19,6 +19,9 @@ $(function() {
       revert: "invalid",
       stop: function(event, ui) {
           leftMenu.dropHandler(event, ui);
+      },
+      start: function(event, ui) {
+          leftMenu.init(event, ui);
       }
   });
 
@@ -72,5 +75,8 @@ $(function() {
       },
       accept: ".actionBox"
   });
+
+
+
 
 })
